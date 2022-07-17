@@ -8,10 +8,11 @@
 }
 
 .category img{
-    width: 30px;
+    width: 20px;
     height: 30px;
     margin-top: 10px;
     object-fit: contain;
+    color: var(--color-secondary);
 }
 
 .category span{
