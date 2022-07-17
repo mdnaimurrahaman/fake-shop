@@ -1,3 +1,11 @@
 .brand__logo{
     color: var(--color-primary);
 }
+
+.menu{
+    color: var(--color-secondary);
+    transition: var(--transition);
+}
+.menu:hover{
+    color: var(--color-primary-variant)
+}
