@@ -1,10 +1,11 @@
 import React from 'react';
 import SideCard from './SideCard';
+import './SideCard.css'
 
 const Slider = () => {
     return (
         <div className='homeSlider contentWidth'>
-            <div className='container'>
+            <div className=''>
                 <SideCard/>
             </div>
             

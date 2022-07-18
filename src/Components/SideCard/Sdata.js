@@ -15,13 +15,13 @@ const Sdata = [
       id: 3,
       title: "50% Off For Your First Shopping",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis lobortis consequat eu, quam etiam at quis ut convallis.",
-      cover: "https://i.ibb.co/s1LsyPF/toppng-com-stealth-ghost-rider-jacket-for-men-autum-590x765.png",
+      cover: "https://i.ibb.co/rf5DSKH/Downloader.png",
     },
     {
       id: 4,
       title: "50% Off For Your First Shopping",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis lobortis consequat eu, quam etiam at quis ut convallis.",
-      cover: "https://i.ibb.co/0jGyHHJ/Young-Fashion-Girl-Holding-Shopping-Bag-PNG.png",
+      cover: "https://i.ibb.co/yRZzWKP/62.png",
     },
   ]
   export default Sdata

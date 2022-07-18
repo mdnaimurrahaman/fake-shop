@@ -14,15 +14,15 @@ const SideCard = () => {
         slidesToScroll: 1,
         autoplay: true,
         appendDots: (dots) => {
-          return <ul style={{ margin: "0px" }}>{dots}</ul>
+          return <ul style={{ margin: "0px 0px -65px 10px" }}>{dots}</ul>
         },
       };
   return (
     <>
-     <Slider {...settings}>
+     <Slider {...settings} className="homeSlide">
       {Sdata.map((value, index) => {
         return (
-          <div className="box d-flex top" key={index}>
+          <div className="box homeSlide top" key={index}>
             <div className="left">
               <h1>{value.title}</h1>
               <p>{value.desc}</p>

@@ -7,7 +7,7 @@ import Slider from "../SideCard/Slider";
 
 const Home = () => {
   return (
-    <div className="container d-flex justify-content-between">
+    <div className="container d-flex justify-content-between mt-4">
           <Categories />
           <Slider />
     </div>
