@@ -12,7 +12,7 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <Navbar className='nav-bar' bg="light" expand="lg">
+        <Navbar className='nav-bar' expand="lg">
         <Container>
           <Navbar.Brand as={Link} to="/" className='brand__logo'><AiFillShop/> FakeShop</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

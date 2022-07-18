@@ -1,6 +1,7 @@
 import React from 'react';
 import './Categories.css'
 import {RiShirtLine} from 'react-icons/ri'
+import {AiOutlineAppstoreAdd} from 'react-icons/ai'
 
 const Categories = () => {
     const data =[
@@ -16,10 +17,10 @@ const Categories = () => {
             cateImg: "https://i.ibb.co/7zvbk8b/3687823-adventure-automotive-car-transport-transportation-icon.png",
             cateName: "Cars",
           },
-          {
-            cateImg: "https://i.ibb.co/df3Pyds/1976053-home-home-page-homepage-homepages-icon.pngg",
-            cateName: "Home & Garden",
-          },
+          // {
+          //   cateImg: "https://i.ibb.co/df3Pyds/1976053-home-home-page-homepage-homepages-icon.pngg",
+          //   cateName: "Home & Garden",
+          // },
           {
             cateImg: "https://i.ibb.co/NLzQvf1/430097-gift-present-icon.png",
             cateName: "Gifts",
@@ -48,6 +49,7 @@ const Categories = () => {
     ]
     return (
         <div className='category'>
+          <li className='cat-icon'> <AiOutlineAppstoreAdd className='me-3'/> Catagories</li>
             {
                 data.map((value,index)=>{
                     return(

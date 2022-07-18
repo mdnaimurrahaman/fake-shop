@@ -8,6 +8,7 @@
 }
 
 .contentWidth{
+    
     width: 73%;
 }
 
@@ -37,4 +38,16 @@
 
 span{
     color: var(--color-secondary);
+}
+li{
+    color: var(--color-secondary);
+    margin: 10px 20px;
+    text-transform: capitalize;
+}
+.cat-icon{
+    background: var(--color-bg-variant);
+    padding: 10px;
+    font-weight: 600;
+    color: white;
+    border-radius: 5px;
 }
