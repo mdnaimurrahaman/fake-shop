@@ -1,13 +1,17 @@
 .product-grid{
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    border: 1px solid #e7e7e7;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    border-radius: 5px;
+}
+.product-grid a {
+    text-decoration: none;
 }
 .product-grid .product-image{ position: relative; }
 .product-grid .product-image a.image{ display: block; }
 .product-grid .product-image img{
     width: 100%;
-    height: auto;
+    height: 250px;
     transition: all 0.3s ease 0s;
 }
 .product-grid .product-image:hover img{ transform: translate(10px,-10px); }

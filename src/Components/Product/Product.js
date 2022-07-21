@@ -25,21 +25,21 @@ const Product = ({ product }) => {
 
 
     <>
-    <div class="col-md-3 col-sm-6">
-        <div class="product-grid h-100">
+    <div class="col-md-3 col-sm-6 mb-4">
+        <div class="product-grid h-100 p-3">
             <div class="product-image">
                 <a href="#" class="image">
                     <img class="pic-1" src={image}alt={title}/>
                 </a>
-                <span class="product-sale-label">Sale!</span>
+                <span class="product-sale-label">50% off</span>
                 <ul class="product-links">
                     <li><a href="#"><i class="fa fa-shopping-bag"></i> Add to cart</a></li>
-                    <li><a href="#"><i class="fa fa-search"></i> Quick View</a></li>
+                    <li onClick={() => navigateToItemDetail(id)}><a href="#"><i class="fa fa-search"></i>More Details</a></li>
                 </ul>
             </div>
             <div class="product-content">
-                <h3 class="title"><a href="#">{title.substring(0,12)}</a></h3>
-                <div class="price"><span>$85.55</span>${price}</div>
+                <h3 class="title fw-bold"><a href="#">{title.substring(0,12)}</a></h3>
+                <div class="price"><span>${price-price*50/100}</span>${price}</div>
             </div>
         </div>
     </div>

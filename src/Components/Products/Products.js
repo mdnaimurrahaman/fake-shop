@@ -1,5 +1,6 @@
 
 import UseProducts from '../Hooks/UseProducts';
+import './Products.css'
 
 import Product from '../Product/Product';
 import Loading from '../Shared/Loading';
@@ -14,9 +15,10 @@ const Products = () => {
     }
 
     return (
-        <div>
+        <div className='all__products'>
             <div className='container'>
-                <div className='items-section row'>
+              <h1 className='fw-bold text-center title'>Latest Products</h1>
+                <div className='items-section row my-4'>
                     {
                         products.map(product => <Product key={product.id} product={product}></Product>)
                     }
