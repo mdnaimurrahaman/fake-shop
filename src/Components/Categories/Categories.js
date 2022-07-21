@@ -1,6 +1,6 @@
 import React from 'react';
 import './Categories.css'
-import {RiShirtLine} from 'react-icons/ri'
+
 import {AiOutlineAppstoreAdd} from 'react-icons/ai'
 
 const Categories = () => {

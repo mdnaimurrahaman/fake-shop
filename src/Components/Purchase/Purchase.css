@@ -1,0 +1,37 @@
+.detail-container{
+    margin-top: 8rem;
+}
+
+.detail-container select{
+    /* display: block; */
+    width: 130px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--color-bg-variant);
+}
+.detail-container input{
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid var(--color-bg-variant);
+}
+.size-quantity-add{
+    display: flex;
+    gap: 20px;
+}
+
+.detail__price{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.detail__price span{
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: var(--color-primary);
+}

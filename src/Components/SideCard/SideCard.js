@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "./SideCard.css";
 
+
 const SideCard = () => {
     const settings = {
         dots: true,
@@ -26,7 +27,7 @@ const SideCard = () => {
             <div className="left">
               <h1>{value.title}</h1>
               <p>{value.desc}</p>
-              <button className="btn btn-primary">Visit Collections</button>
+              <button className="main__btn">Visit Collections</button>
             </div>
             <div className="right">
                 <img src={value.cover} alt=""/>

@@ -20,6 +20,7 @@
     background: #1abc9c;
     font-size: 13px;
     text-transform: capitalize;
+    border-radius: 4em 8em;
     line-height: 35px;
     width: 55px;
     height: 35px;
@@ -61,11 +62,13 @@
     opacity: 0.9;
     transition: all 0.3s ease 0s;
     animation: bg-animate 5s infinite linear;
+    border-radius: 5px;
 }
 .product-grid .product-links li a:hover{
     color: #fff;
     box-shadow: 0 0 0 3px #fff inset;
     opacity: 1;
+    
 }
 .product-grid .product-links li a i{ margin: 0 5px 0 0; }
 .product-grid .product-content{ padding: 15px 0 5px; }
@@ -94,20 +97,20 @@
     margin: 0 3px 0 0;
 }
 @keyframes color-animate{
-    0%{ color: #00b894; }
-    20%{ color: #00cec9; }
-    40%{ color: #0984e3; }
-    60%{ color: #6c5ce7; }
+    0%{ color: #fe5f34; }
+    20%{ color: #e6460c; }
+    40%{ color:#f19991; }
+    60%{ color: #d22828ec; }
     80%{ color: #e84393; }
-    100%{ color: #00b894; }
+    100%{ color: #ff0505; }
 }
 @keyframes bg-animate{
-    0%{ background-color: #00b894; }
-    20%{ background-color: #00cec9; }
-    40%{ background-color: #0984e3; }
-    60%{ background-color: #6c5ce7; }
-    80%{ background-color: #e84393; }
-    100%{ background-color: #00b894; }
+    0%{ background-color: #fe5f34; }
+    20%{ background-color: #e6460c; }
+    40%{ background-color: #f19991; }
+    60%{ background-color: #d22828ec; }
+    80%{ background-color: #ff0505; }
+    100%{ background-color: #d94717e2; }
 }
 @media screen and (max-width:1200px){
     .product-grid{ margin: 0 0 30px; }
