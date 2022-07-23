@@ -6,8 +6,10 @@ import SideCard from "../SideCard/SideCard";
 import Slider from "../SideCard/Slider";
 import '../SideCard/SideCard.css'
 import Products from "../Products/Products";
+import Banner from "../Banner/Banner";
+import Review from "../Reviews/Review";
 
-const Home = () => {
+const Home = ({reviews}) => {
   return (
     <div>
       <div className="container cta-slider d-flex justify-content-between mt-4">
@@ -17,6 +19,8 @@ const Home = () => {
            
       </div>
       <Products/>
+      <Banner/>
+      <Review />
     </div>
   );
 };

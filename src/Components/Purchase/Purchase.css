@@ -1,5 +1,6 @@
 .detail-container{
-    margin-top: 8rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 .detail-container select{
@@ -27,6 +28,7 @@
     font-size: 30px;
     font-weight: 600;
     margin-top: 20px;
+    display: block;
 }
 .detail__price span{
     margin-left: 10px;
@@ -35,3 +37,28 @@
     margin-top: 20px;
     color: var(--color-primary);
 }
+
+.detail-container img{
+    width: 70%;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid var(--color-bg-variant);
+    padding: 20px;
+    border-radius: 8px; */
+}
+
+
+.icon{
+    font-weight: 700;
+    margin-left: 10px;
+    color: var(--color-primary);
+}
+
+@media only screen and (max-width: 600px) {
+    .size-quantity-add{
+        flex-direction: column;
+    }
+    
+  }

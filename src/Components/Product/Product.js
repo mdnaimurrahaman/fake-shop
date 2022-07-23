@@ -1,5 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import {IoMdCart} from 'react-icons/io'
+import {AiOutlinePicLeft} from 'react-icons/ai'
 import './Product.css'
 
 const Product = ({ product }) => {
@@ -33,8 +35,8 @@ const Product = ({ product }) => {
                 </a>
                 <span class="product-sale-label">50% off</span>
                 <ul class="product-links">
-                    <li><a href="#"><i class="fa fa-shopping-bag"></i> Add to cart</a></li>
-                    <li onClick={() => navigateToItemDetail(id)}><a href="#"><i class="fa fa-search"></i>More Details</a></li>
+                    <li><a href="#"><i class="fa fa-shopping-bag"></i> Add to cart <IoMdCart className='ms-2'/></a></li>
+                    <li onClick={() => navigateToItemDetail(id)}><a href="#"><i class="fa fa-search"></i>More Details <AiOutlinePicLeft className='ms-2'/></a></li>
                 </ul>
             </div>
             <div class="product-content">

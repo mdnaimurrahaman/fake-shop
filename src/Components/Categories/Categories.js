@@ -3,6 +3,7 @@ import './Categories.css'
 
 import {AiOutlineAppstoreAdd} from 'react-icons/ai'
 
+
 const Categories = () => {
     const data =[
         {
