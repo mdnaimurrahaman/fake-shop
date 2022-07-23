@@ -20,7 +20,7 @@ const Home = ({reviews}) => {
       </div>
       <Products/>
       <Banner/>
-      <Review />
+      <Review reviews={reviews}/>
     </div>
   );
 };

@@ -9,6 +9,7 @@ import Data from './Components/Reviews/Data';
 
 function App() {
   const {reviews} = Data;
+  console.log(reviews)
   const [reviw, setReview] = useState([])
   return (
     <div>

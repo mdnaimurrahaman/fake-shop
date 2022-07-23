@@ -2,30 +2,55 @@ import React from 'react';
 import Slider from "react-slick";
 import {GrNext} from 'react-icons/gr'
 import {GrPrevious} from 'react-icons/gr'
+import {BsStarFill} from 'react-icons/bs'
 import './Review.css'
-const Review = () => {
+const Review = ({reviews}) => {
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        nextArrow: <GrNext/>,
+        prevArrow: <GrPrevious/>
+      };
     
     return (
-        <section>
-           <div class="cards">
-                <div>
+        <section className='container'>
+            <Slider {...settings} className="homeSlide">
+            {
+                // eslint-disable-next-line array-callback-return
+                reviews.map((review,index) => {
+                    // const {id, name, cover, rating, time, description} = review
+                    return(
+                        <div class="cards p-2 ">
+                <div  key={index}>
                     <a href="" class="card">
-                    <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
+                    <img src={review.cover} class="card__image" alt="" />
                     <div class="card__overlay">
                         <div class="card__header">
                         <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-                        <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
+                        <img class="card__thumb" src={review.cover} alt="" />
                         <div class="card__header-text">
-                            <h3 class="card__title">Jessica Parker</h3>
-                            <span class="card__tagline">Lorem ipsum dolor sit amet consectetur</span>            
-                            <span class="card__status">1 hour ago</span>
+                            <h3 class="card__title">{review.name}</h3>
+                            <span class="card__tagline">{review.time}</span>            
+                            <div className='review'>
+                                <span class="card__status">{review.rating}</span>
+                                <span><BsStarFill class="star"/></span>
+                            </div>
                         </div>
                         </div>
-                        <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+                        <p class="card__description">{review.description}</p>
                     </div>
                     </a>
                 </div>
             </div>
+            
+                    )
+           })
+            }
+            </Slider>
         </section>
     );
 };
