@@ -13,7 +13,31 @@ const Review = ({reviews}) => {
         slidesToScroll: 1,
         autoplay: true,
         nextArrow: <GrNext/>,
-        prevArrow: <GrPrevious/>
+        prevArrow: <GrPrevious/>,
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 1008,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 800,
+              settings: 'unslick',
+              dots: true,
+              nextArrow: <GrNext/>,
+            prevArrow: <GrPrevious/>,
+            },
+
+          ],
       };
     
     return (
@@ -24,7 +48,7 @@ const Review = ({reviews}) => {
                 reviews.map((review,index) => {
                     // const {id, name, cover, rating, time, description} = review
                     return(
-                        <div class="cards p-2 ">
+                        <div class="cards p-2 2">
                 <div  key={index}>
                     <a href="" class="card">
                     <img src={review.cover} class="card__image" alt="" />

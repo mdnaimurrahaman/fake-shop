@@ -51,8 +51,8 @@ const {category, image, description, price, title } = product;
 
                   <h3 className='fw-bold mb-4'>Product Details <AiOutlinePicLeft className='icon'/></h3>
                   <p className='mb-4'>{description}</p>
-                  <span>Rate:<AiFillStar className='icon'/></span>
-                  <span className='ms-4'>Count:</span>
+                  {/* <span>Rate:<AiFillStar className='icon'/></span>
+                  <span className='ms-4'>Count:</span> */}
                 </div>
             </div>
         </div>

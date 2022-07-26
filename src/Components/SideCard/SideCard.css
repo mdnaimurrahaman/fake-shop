@@ -115,9 +115,7 @@
     opacity: 1;
   }
 
-.menu{
-  display: flex;
-}
+
   
   .main__btn::after {
     content: '';
