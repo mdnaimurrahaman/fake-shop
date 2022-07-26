@@ -113,10 +113,20 @@
   .card__description {
     padding: 0 2em 2em;
     margin: 0;
-    color: #D7BDCA;
-    font-family: "MockFlowFont";   
+    color: var(--color-bg-variant);  
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
-  }    
+  }  
+  
+svg.slick-arrow.slick-prev{
+background-color: #ec4d31;
+padding: 3px;
+border-radius: 3px;
+ }
+ svg.slick-arrow.slick-next{
+  background-color: #ec4d31;
+padding: 3px;
+border-radius: 3px;
+}

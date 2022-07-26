@@ -7,6 +7,7 @@ import {AiOutlineAppstoreAdd} from 'react-icons/ai'
 import {AiFillShop} from 'react-icons/ai'
 import {HiShoppingCart} from 'react-icons/hi'
 import {RiUser3Fill} from 'react-icons/ri'
+import logo from "../../Assets/logo.png"
 import './Header.css'
 
 
@@ -14,7 +15,7 @@ const Header = () => {
     return (
         <Navbar className='nav-bar' expand="lg">
         <Container>
-          <Navbar.Brand as={Link} to="/" className='brand__logo'><AiFillShop/> FakeShop</Navbar.Brand>
+          <Navbar.Brand as={Link} to="/" className='brand__logo'><img src={logo} alt="" srcset="" /></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className='justify-content-end' id="basic-navbar-nav">
             <Nav>

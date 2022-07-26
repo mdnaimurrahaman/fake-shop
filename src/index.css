@@ -18,7 +18,7 @@
   --color-primary-variant: #f78361;
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
-  --surface-color: #fff;
+  --surface-color: rgb(255, 236, 236);
   --curve: 10;
 
   --transition: all 400ms ease;

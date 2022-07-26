@@ -8,7 +8,6 @@
 }
 
 .contentWidth{
-    
     width: 73%;
 }
 
@@ -51,3 +50,9 @@ li{
     color: white;
     border-radius: 5px;
 }
+
+@media only screen and (max-width: 600px) {
+    .category{
+        width: 100%;
+    }
+  }
